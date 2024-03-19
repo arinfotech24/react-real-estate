@@ -19,7 +19,7 @@ jobs:
           node-version: '20'
           
       - name: Navigate to homez directory
-        run: cd /react-real-estate/homez
+        run: cd react-real-estate/homez
 
       - name: Install dependencies
         run: npm install
