@@ -21,7 +21,7 @@ jobs:
           node-version: '20'  # Change to your Node.js version if different
 
       - name: Navigate to homez directory
-        run: cd react-real-estate/homez
+        run: cd $PWD/homez
 
       - name: Install dependencies
         run: npm install
@@ -33,4 +33,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: react-real-estate/homez/build  # Path to the build directory relative to the repository root
+          publish_dir: $PWD/homez/build  # Path to the build directory relative to the repository root
