@@ -21,7 +21,7 @@ jobs:
           node-version: '20'  # Change to your Node.js version if different
 
       - name: Navigate to homez directory
-        run: react-real-estate/homez
+        run: cd react-real-estate/homez
 
       - name: Install dependencies
         run: npm install
